@@ -1,0 +1,13 @@
+# Local environment / IDE
+.vscode/
+.idea/
+.antigravity/
+.gemini/
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Uploaded content
+uploads/*
+!uploads/profile.jpg.jpg
