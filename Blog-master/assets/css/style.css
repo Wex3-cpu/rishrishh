@@ -67,12 +67,11 @@ body {
     font-family: var(--font-primary);
     line-height: 1.65;
     color: var(--color-dark);
-    /* Premium generated asset backdrop with subtle overlays */
+    /* Rose Quartz and Serenity gradient background */
     background: 
-        radial-gradient(at 0% 0%, rgba(241, 245, 249, 0.6) 0, transparent 40%),
-        radial-gradient(at 100% 0%, rgba(250, 232, 243, 0.6) 0, transparent 40%),
-        linear-gradient(rgba(248, 250, 252, 0.88), rgba(248, 250, 252, 0.88)),
-        url('../img/blog_background.png') no-repeat center center;
+        radial-gradient(at 0% 0%, rgba(247, 202, 201, 0.5) 0, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(145, 168, 208, 0.5) 0, transparent 50%),
+        linear-gradient(135deg, #F7CAC9 0%, #91A8D0 100%);
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -3817,4 +3816,44 @@ footer p {
         border-bottom: none;
         padding-bottom: 0;
     }
+}
+
+
+/* 🎉 Fun Facts About Me Section */
+.fun-facts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.fun-fact-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-md);
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fun-fact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(99, 102, 241, 0.3);
+}
+
+.fact-emoji {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.fun-fact-card p {
+    color: #475569;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
 }
