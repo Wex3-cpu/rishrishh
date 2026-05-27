@@ -3821,10 +3821,9 @@ footer p {
 
 /* 🎉 Fun Facts About Me Section */
 .fun-facts-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 24px;
-    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .fun-fact-card {
@@ -3832,28 +3831,28 @@ footer p {
     backdrop-filter: blur(12px);
     border: 1px solid var(--glass-border);
     border-radius: var(--border-radius-md);
-    padding: 30px;
-    box-shadow: var(--shadow-md);
+    padding: 20px;
+    box-shadow: var(--shadow-sm);
     display: flex;
-    gap: 20px;
+    gap: 16px;
     align-items: flex-start;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .fun-fact-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-lg);
-    border-color: rgba(99, 102, 241, 0.3);
+    transform: translateX(8px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(99, 102, 241, 0.25);
 }
 
 .fact-emoji {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     flex-shrink: 0;
 }
 
 .fun-fact-card p {
     color: #475569;
-    font-size: 1.05rem;
-    line-height: 1.7;
+    font-size: 0.98rem;
+    line-height: 1.6;
     margin: 0;
 }
